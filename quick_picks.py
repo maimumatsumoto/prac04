@@ -17,12 +17,12 @@ def main():
         picklist = []
         for x in range(6):
             number=random.randint(1,45)
-            while number in picklist:
-                number=random.randint(1,45)
-            picklist.append(number)
+            while number in picklist:  #for when there is a same number in the line
+                number=random.randint(1,45) #get the number again
+            picklist.append(number) #add onto the list
 
-        picklist.sort()
+        picklist.sort() #make the numbers in order (small to big)
 
         print(" ".join("{:3}".format(number) for number in picklist))
-
+                        #3 spacing
 main()
