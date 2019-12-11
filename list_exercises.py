@@ -1,16 +1,9 @@
 #//1. Basic list operations//#
-"""numbers=[]
-number1=int(input("Number: "))
-number2=int(input("Number: "))
-number3=int(input("Number: "))
-number4=int(input("Number: "))
-number5=int(input("Number: "))
+numbers=[]
 
-numbers.append(number1)
-numbers.append(number2)
-numbers.append(number3)
-numbers.append(number4)
-numbers.append(number5)
+for i in range(5):
+    value= int(input("Number: "))
+    numbers.append(value)
 
 print("The first number is {}".format(numbers[0]))
 print("The last number is {}".format(numbers[-1]))
@@ -34,7 +27,6 @@ if username in usernames:
 if not username in usernames:
     print("Access denied")
 
-"""
 
 
 #//3. List comprehensions//#
